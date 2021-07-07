@@ -1,0 +1,173 @@
+{% extends "base.html" %}
+
+{% block nav %} 
+    <nav>
+        <!--logo--------------->
+        <a href="#" class="logo">
+            <img src="{{ url_for('static', filename='images/ooblets-logo.png') }}"/>
+        </a>
+        <!--menu--btn----------------->
+        <ul class="menu">
+            <li><a href="{{url_for('showOoblets')}}">Home</a></li>
+            <li><a href="{{url_for('aboutOoblets')}}">About</a></li>
+            <li><a href="{{url_for('docsOoblets')}}">Docs</a></li>
+        </ul>
+    </nav> 
+{% endblock %}
+
+{% block screenshots %}
+    <section id="main">
+        <!--showcase----------------------->
+        <!--heading------------->
+        
+        <ul id="autoWidth" class="cs-hidden">
+        
+            <!--box-1--------------------------->
+            <li class="item-a">
+                <!--showcase-box------------------->
+                <div class="showcase-box">
+                    <img src="{{ url_for('static', filename='images/ooblets_screenshot_farm.jpg') }}"/>
+                </div>
+            </li>
+                <!--box-2--------------------------->
+            <li class="item-b">
+                <!--showcase-box------------------->
+                <div class="showcase-box">
+                    <img src="{{ url_for('static', filename='images/adjusted-purple-night-dance.jpg') }}"/>
+                </div>
+            </li>
+                <!--box-3--------------------------->
+            <li class="item-c">
+                <!--showcase-box------------------->
+                <div class="showcase-box">
+                    <img src="{{ url_for('static', filename='images/petula-dance.jpg') }}"/>
+                </div>
+            </li>
+                <!--box-4--------------------------->
+            <li class="item-d">
+                <!--showcase-box------------------->
+                <div class="showcase-box">
+                    <img src="{{ url_for('static', filename='images/blue-crop.jpg') }}"/>
+                </div>
+            </li>
+                <!--box-5--------------------------->
+            <li class="item-e">
+                <!--showcase-box------------------->
+                <div class="showcase-box">
+                    <img src="{{ url_for('static', filename='images/hair-salon-interior.jpg') }}"/>
+                </div>
+            </li>
+        </ul>
+        
+    </section>
+{% endblock %}
+
+
+{% block monsters %}
+    <section id="information">
+        <h2 class="information-heading">OOBLETS</h2>
+        <!--slider------------------->
+        
+        <ul id="autoWidth2" class="cs-hidden">
+            <!--slide-box-1------------------>
+            {% for ooblet in ooblets %}
+            <li class="item-a">
+                <div class="information-box">
+                    <!--img-------->
+                    <div class="information-b-img">
+                        <img src="{{ooblet.ooblet_image_link}}">
+                    </div>
+                    <!--text---------->
+                    <div class="information-b-text">
+                        <strong>{{ooblet.ooblet_name}} </strong>
+                    </div>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+{% endblock %}
+
+{% block characters %}
+    <section id="information-characters">
+        <h2 class="information-characters-heading">CHARACTERS</h2>
+        <!--slider------------------->
+        
+        <ul id="autoWidth2" class="cs-hidden">
+            <!--slide-box-1------------------>
+            {% for character in characters %}
+            <li class="item-a">
+                <div class="information-characters-box">
+                    <!--img-------->
+                    <div class="information-characters-b-img">
+                        <img src="{{character.character_image_link}}">
+                    </div>
+                    <!--text---------->
+                    <div class="information-characters-b-text">
+                        <strong>{{character.character_name}} </strong>
+                    </div>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+{% endblock %}
+
+{% block crops %}
+    <section id="information">
+        <h2 class="information-heading">CROPS</h2>
+        <!--slider------------------->
+        
+        <ul id="autoWidth2" class="cs-hidden">
+            <!--slide-box-1------------------>
+            {% for crop in crops %}
+            <li class="item-a">
+                <div class="information-box">
+                    <!--img-------->
+                    <div class="information-b-img">
+                        <img src="{{crop.crop_image_link}}">
+                    </div>
+                    <!--text---------->
+                    <div class="information-b-text">
+                        <strong>{{crop.crop_name}} </strong>
+                    </div>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+{% endblock %}
+
+{% block tools %}
+    <section id="information">
+        <h2 class="information-heading">TOOLS</h2>
+        <!--slider------------------->
+        
+        <ul id="autoWidth2" class="cs-hidden">
+            <!--slide-box-1------------------>
+            {% for tool in tools %}
+            <li class="item-a">
+                <div class="information-box">
+                    <!--img-------->
+                    <div class="information-b-img">
+                        <img src="{{tool.tool_image_link}}">
+                    </div>
+                    <!--text---------->
+                    <div class="information-b-text">
+                        <strong>{{tool.tool_name}} </strong>
+                    </div>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+{% endblock %}
+
+{% block foods %}
+{% endblock %}
+
+
+{% block content %}   
+{% endblock %}
+
+

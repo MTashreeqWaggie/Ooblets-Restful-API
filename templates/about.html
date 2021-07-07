@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block nav %} 
+    <nav>
+        <!--logo--------------->
+        <a href="#" class="logo">
+            <img src="{{ url_for('static', filename='images/ooblets-logo.png') }}"/>
+        </a>
+        <!--menu--btn----------------->
+        <ul class="menu">
+            <li><a href="{{url_for('showOoblets')}}">Home</a></li>
+            <li><a href="{{url_for('aboutOoblets')}}">About</a></li>
+            <li><a href="{{url_for('docsOoblets')}}">Docs</a></li>
+        </ul>
+    </nav> 
+{% endblock %}
