@@ -16,6 +16,8 @@ from models.tool import get_tools, get_tool, makeANewTool, updateTool ,deleteATo
 from models.crop import get_crops, get_crop, makeANewCrop, updateCrop ,deleteACrop
 from models.food_recipes import get_foods, get_food, makeANewFood, updateFood ,deleteAFood
 
+import os 
+
 app = Flask(__name__)
 app.secret_key = 'jose'
 api = Api(app)
@@ -257,5 +259,5 @@ def foodsFunctionId(id):
 api.add_resource(UserRegister, '/register')
 
 if __name__ == '__main__':
-   app.debug = True
+   app.debug = False
    app.run()
