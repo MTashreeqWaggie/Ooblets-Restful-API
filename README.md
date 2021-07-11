@@ -1,4 +1,5 @@
 # Ooblets-Restful-API
+![image](https://ooblets.com/images/Metatag_image.jpg)
 ## Introduction
 
 ## Base URL
@@ -113,10 +114,90 @@ URL Parameters
 | id | The id of the character to delete |
 
 ## Crops
+**GET all Crops**
+
+This endpoint retrieves all crops.
+
+HTTP Request
+```bash
+https://ooblets-api.herokuapp.com/cropsApi
+```
+
+**GET a Specific Crop**
+
+This endpoint retrieves a specific crop.
+
+HTTP Request
+```bash
+https://ooblets-api.herokuapp.com/cropsApi/<id>
+```
+
+URL Parameters
+
+| Parameter |  	Description |
+| ------------- | ------------- |
+| id | The id of the crop to delete |
+
+
+**DELETE a Specific Crop**
+
+This endpoint deletes a specific crop.
+
+HTTP Request
+```bash
+https://ooblets-api.herokuapp.com/cropsApi/<id>
+```
+
+URL Parameters
+
+| Parameter |  	Description |
+| ------------- | ------------- |
+| id | The id of the crop to delete |
 
 ## Tools
 
+**GET all Tools**
+
+This endpoint retrieves all tools.
+
+HTTP Request
+```bash
+https://ooblets-api.herokuapp.com/toolsApi
+```
+
+**GET a Specific Tool**
+
+This endpoint retrieves a specific tool.
+
+HTTP Request
+```bash
+https://ooblets-api.herokuapp.com/toolsApi/<id>
+```
+
+URL Parameters
+
+| Parameter |  	Description |
+| ------------- | ------------- |
+| id | The id of the tool to delete |
+
+
+**DELETE a Specific Tool**
+
+This endpoint deletes a specific tool.
+
+HTTP Request
+```bash
+https://ooblets-api.herokuapp.com/toolsApi/<id>
+```
+
+URL Parameters
+
+| Parameter |  	Description |
+| ------------- | ------------- |
+| id | The id of the tool to delete |
+
 ## Errors
+
 The Ooblets API uses the following error codes:
 
 | Error Code |  	 	Meaning |
