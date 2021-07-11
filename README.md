@@ -1,6 +1,11 @@
 # Ooblets-Restful-API
 ![image](https://ooblets.com/images/Metatag_image.jpg)
+
 ## Introduction
+This is a RESTful API created based on the game name Ooblets. Why? I was curious on how api's work and tried creating one of my own.
+
+## NB!
+Gifs still have be added to show users how to make use of endpoints in **postman**. 
 
 ## Base URL
 ```bash
@@ -41,7 +46,7 @@ HTTP Request
 https://ooblets-api.herokuapp.com/oobletsApi
 ```
 
-**GET a Specific Ooblet**
+**GET a Specific Ooblet** (JWT Token needed.)
 
 This endpoint retrieves a specific ooblet.
 
@@ -57,7 +62,7 @@ URL Parameters
 | id | The id of the ooblet to delete |
 
 
-**DELETE a Specific Ooblet**
+**DELETE a Specific Ooblet** (JWT Token needed.)
 
 This endpoint deletes a specific ooblet.
 
@@ -82,7 +87,7 @@ HTTP Request
 https://ooblets-api.herokuapp.com/charactersApi
 ```
 
-**GET a Specific Character**
+**GET a Specific Character** (JWT Token needed.)
 
 This endpoint retrieves a specific character.
 
@@ -98,7 +103,7 @@ URL Parameters
 | id | The id of the character to delete |
 
 
-**DELETE a Specific Character**
+**DELETE a Specific Character** (JWT Token needed.)
 
 This endpoint deletes a specific character.
 
@@ -114,7 +119,7 @@ URL Parameters
 | id | The id of the character to delete |
 
 ## Crops
-**GET all Crops**
+**GET all Crops** 
 
 This endpoint retrieves all crops.
 
@@ -123,7 +128,7 @@ HTTP Request
 https://ooblets-api.herokuapp.com/cropsApi
 ```
 
-**GET a Specific Crop**
+**GET a Specific Crop** (JWT Token needed.)
 
 This endpoint retrieves a specific crop.
 
@@ -139,7 +144,7 @@ URL Parameters
 | id | The id of the crop to delete |
 
 
-**DELETE a Specific Crop**
+**DELETE a Specific Crop** (JWT Token needed.)
 
 This endpoint deletes a specific crop.
 
@@ -165,7 +170,7 @@ HTTP Request
 https://ooblets-api.herokuapp.com/toolsApi
 ```
 
-**GET a Specific Tool**
+**GET a Specific Tool** (JWT Token needed.)
 
 This endpoint retrieves a specific tool.
 
@@ -181,7 +186,7 @@ URL Parameters
 | id | The id of the tool to delete |
 
 
-**DELETE a Specific Tool**
+**DELETE a Specific Tool** (JWT Token needed.)
 
 This endpoint deletes a specific tool.
 
