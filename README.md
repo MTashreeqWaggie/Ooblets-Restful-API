@@ -33,7 +33,7 @@ URL Parameters
 
 | Parameter |  	Description |
 | ------------- | ------------- |
-| ID | The ID of the kitten to retrieve |
+| id | The id of the ooblet to delete |
 
 
 **DELETE a Specific Ooblet**
@@ -49,7 +49,7 @@ URL Parameters
 
 | Parameter |  	Description |
 | ------------- | ------------- |
-| ID | The ID of the kitten to retrieve |
+| id | The id of the ooblet to delete |
 
 ## Characters
 
@@ -58,3 +58,13 @@ URL Parameters
 ## Tools
 
 ## Errors
+The Ooblets API uses the following error codes:
+
+| Error Code |  	 	Meaning |
+| ------------- | ------------- |
+| 400 | Bad Request -- Your request is invalid. |
+| 401 | Unauthorized -- Your not using a JWT token. |
+| 404 |  	Not Found -- The specified Ooblet could not be found. |
+| 410 | Gone -- The ooblet requested has been removed from our servers. |
+| 500 |  	Internal Server Error -- We had a problem with our server. Try again later. |
+| 503 |  	Service Unavailable -- We're temporarily offline for maintenance. Please try again later. |
