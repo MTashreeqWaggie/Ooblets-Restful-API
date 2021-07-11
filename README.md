@@ -6,9 +6,29 @@
 https://ooblets-api.herokuapp.com
 ```
 
-## Register a User
+## Register
+
+**REGISTER a User**
+
+This endpoint registers a user.
+
+HTTP Request
+
+```bash
+https://ooblets-api.herokuapp.com/register
+```
 
 ## Authentication
+
+**AUTHENTICATE a User**
+
+This endpoint authenticates a user and gives a jwt token.
+
+HTTP Request
+
+```bash
+https://ooblets-api.herokuapp.com/auth
+```
 
 ## Ooblets
 **GET all Ooblets**
@@ -52,6 +72,45 @@ URL Parameters
 | id | The id of the ooblet to delete |
 
 ## Characters
+**GET all Characters**
+
+This endpoint retrieves all characters.
+
+HTTP Request
+```bash
+https://ooblets-api.herokuapp.com/charactersApi
+```
+
+**GET a Specific Character**
+
+This endpoint retrieves a specific character.
+
+HTTP Request
+```bash
+https://ooblets-api.herokuapp.com/charactersApi/<id>
+```
+
+URL Parameters
+
+| Parameter |  	Description |
+| ------------- | ------------- |
+| id | The id of the character to delete |
+
+
+**DELETE a Specific Character**
+
+This endpoint deletes a specific character.
+
+HTTP Request
+```bash
+https://ooblets-api.herokuapp.com/charactersApi/<id>
+```
+
+URL Parameters
+
+| Parameter |  	Description |
+| ------------- | ------------- |
+| id | The id of the character to delete |
 
 ## Crops
 
