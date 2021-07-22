@@ -24,6 +24,8 @@ HTTP Request
 https://ooblets-api.herokuapp.com/register
 ```
 
+![Image](https://github.com/MTashreeqWaggie/Ooblets-Restful-API/blob/main/screenshots/Register.PNG)
+
 ## Authentication
 
 **AUTHENTICATE a User**
@@ -35,6 +37,8 @@ HTTP Request
 ```bash
 https://ooblets-api.herokuapp.com/auth
 ```
+
+![Image](https://github.com/MTashreeqWaggie/Ooblets-Restful-API/blob/main/screenshots/Authentication.PNG)
 
 ## Ooblets
 **GET all Ooblets**
@@ -76,6 +80,8 @@ URL Parameters
 | Parameter |  	Description |
 | ------------- | ------------- |
 | id | The id of the ooblet to delete |
+
+![Image](https://github.com/MTashreeqWaggie/Ooblets-Restful-API/blob/main/screenshots/Authentication.PNG)
 
 ## Characters
 **GET all Characters**
