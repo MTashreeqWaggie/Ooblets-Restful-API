@@ -63,23 +63,8 @@ URL Parameters
 
 | Parameter |  	Description |
 | ------------- | ------------- |
-| id | The id of the ooblet to delete |
+| id | The id of the ooblet |
 
-
-**DELETE a Specific Ooblet** (JWT Token needed.)
-
-This endpoint deletes a specific ooblet.
-
-HTTP Request
-```bash
-https://ooblets-api.herokuapp.com/oobletsApi/<id>
-```
-
-URL Parameters
-
-| Parameter |  	Description |
-| ------------- | ------------- |
-| id | The id of the ooblet to delete |
 
 ![Image](https://github.com/MTashreeqWaggie/Ooblets-Restful-API/blob/main/screenshots/Authentication.PNG)
 
@@ -106,23 +91,8 @@ URL Parameters
 
 | Parameter |  	Description |
 | ------------- | ------------- |
-| id | The id of the character to delete |
+| id | The id of the character |
 
-
-**DELETE a Specific Character** (JWT Token needed.)
-
-This endpoint deletes a specific character.
-
-HTTP Request
-```bash
-https://ooblets-api.herokuapp.com/charactersApi/<id>
-```
-
-URL Parameters
-
-| Parameter |  	Description |
-| ------------- | ------------- |
-| id | The id of the character to delete |
 
 ## Crops
 **GET all Crops** 
@@ -147,23 +117,8 @@ URL Parameters
 
 | Parameter |  	Description |
 | ------------- | ------------- |
-| id | The id of the crop to delete |
+| id | The id of the crop |
 
-
-**DELETE a Specific Crop** (JWT Token needed.)
-
-This endpoint deletes a specific crop.
-
-HTTP Request
-```bash
-https://ooblets-api.herokuapp.com/cropsApi/<id>
-```
-
-URL Parameters
-
-| Parameter |  	Description |
-| ------------- | ------------- |
-| id | The id of the crop to delete |
 
 ## Tools
 
@@ -189,23 +144,9 @@ URL Parameters
 
 | Parameter |  	Description |
 | ------------- | ------------- |
-| id | The id of the tool to delete |
+| id | The id of the tool|
 
 
-**DELETE a Specific Tool** (JWT Token needed.)
-
-This endpoint deletes a specific tool.
-
-HTTP Request
-```bash
-https://ooblets-api.herokuapp.com/toolsApi/<id>
-```
-
-URL Parameters
-
-| Parameter |  	Description |
-| ------------- | ------------- |
-| id | The id of the tool to delete |
 
 ## Errors
 
