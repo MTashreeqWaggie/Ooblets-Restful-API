@@ -50,6 +50,8 @@ HTTP Request
 https://ooblets-api.herokuapp.com/oobletsApi
 ```
 
+![Image](https://github.com/MTashreeqWaggie/Ooblets-Restful-API/blob/main/screenshots/AllOoblets.PNG)
+
 **GET a Specific Ooblet** (JWT Token needed.)
 
 This endpoint retrieves a specific ooblet.
@@ -66,7 +68,7 @@ URL Parameters
 | id | The id of the ooblet |
 
 
-![Image](https://github.com/MTashreeqWaggie/Ooblets-Restful-API/blob/main/screenshots/Authentication.PNG)
+![Image](https://github.com/MTashreeqWaggie/Ooblets-Restful-API/blob/main/screenshots/SpecificOoblet.PNG)
 
 ## Characters
 **GET all Characters**
@@ -77,6 +79,8 @@ HTTP Request
 ```bash
 https://ooblets-api.herokuapp.com/charactersApi
 ```
+
+![Image](https://github.com/MTashreeqWaggie/Ooblets-Restful-API/blob/main/screenshots/AllCharacters.PNG )
 
 **GET a Specific Character** (JWT Token needed.)
 
@@ -93,6 +97,7 @@ URL Parameters
 | ------------- | ------------- |
 | id | The id of the character |
 
+![Image](https://github.com/MTashreeqWaggie/Ooblets-Restful-API/blob/main/screenshots/specificCharacter.PNG)
 
 ## Crops
 **GET all Crops** 
@@ -103,6 +108,8 @@ HTTP Request
 ```bash
 https://ooblets-api.herokuapp.com/cropsApi
 ```
+
+![Image](https://github.com/MTashreeqWaggie/Ooblets-Restful-API/blob/main/screenshots/AllCrops.PNG)
 
 **GET a Specific Crop** (JWT Token needed.)
 
@@ -119,6 +126,7 @@ URL Parameters
 | ------------- | ------------- |
 | id | The id of the crop |
 
+![Image](https://github.com/MTashreeqWaggie/Ooblets-Restful-API/blob/main/screenshots/specificCrop.PNG)
 
 ## Tools
 
@@ -130,6 +138,8 @@ HTTP Request
 ```bash
 https://ooblets-api.herokuapp.com/toolsApi
 ```
+
+![Image](https://github.com/MTashreeqWaggie/Ooblets-Restful-API/blob/main/screenshots/AllTools.PNG)
 
 **GET a Specific Tool** (JWT Token needed.)
 
@@ -146,6 +156,8 @@ URL Parameters
 | ------------- | ------------- |
 | id | The id of the tool|
 
+
+![Image](https://github.com/MTashreeqWaggie/Ooblets-Restful-API/blob/main/screenshots/specificTools.PNG)
 
 
 ## Errors
