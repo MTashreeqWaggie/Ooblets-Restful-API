@@ -50,8 +50,6 @@ HTTP Request
 https://ooblets-api.herokuapp.com/oobletsApi
 ```
 
-![Image](https://github.com/MTashreeqWaggie/Ooblets-Restful-API/blob/main/screenshots/AllOoblets.PNG)
-
 **GET a Specific Ooblet** (JWT Token needed.)
 
 This endpoint retrieves a specific ooblet.
@@ -65,10 +63,25 @@ URL Parameters
 
 | Parameter |  	Description |
 | ------------- | ------------- |
-| id | The id of the ooblet |
+| id | The id of the ooblet to delete |
 
 
-![Image](https://github.com/MTashreeqWaggie/Ooblets-Restful-API/blob/main/screenshots/SpecificOoblet.PNG)
+**DELETE a Specific Ooblet** (JWT Token needed.)
+
+This endpoint deletes a specific ooblet.
+
+HTTP Request
+```bash
+https://ooblets-api.herokuapp.com/oobletsApi/<id>
+```
+
+URL Parameters
+
+| Parameter |  	Description |
+| ------------- | ------------- |
+| id | The id of the ooblet to delete |
+
+![Image](https://github.com/MTashreeqWaggie/Ooblets-Restful-API/blob/main/screenshots/Authentication.PNG)
 
 ## Characters
 **GET all Characters**
@@ -79,8 +92,6 @@ HTTP Request
 ```bash
 https://ooblets-api.herokuapp.com/charactersApi
 ```
-
-![Image](https://github.com/MTashreeqWaggie/Ooblets-Restful-API/blob/main/screenshots/AllCharacters.PNG )
 
 **GET a Specific Character** (JWT Token needed.)
 
@@ -95,9 +106,23 @@ URL Parameters
 
 | Parameter |  	Description |
 | ------------- | ------------- |
-| id | The id of the character |
+| id | The id of the character to delete |
 
-![Image](https://github.com/MTashreeqWaggie/Ooblets-Restful-API/blob/main/screenshots/specificCharacter.PNG)
+
+**DELETE a Specific Character** (JWT Token needed.)
+
+This endpoint deletes a specific character.
+
+HTTP Request
+```bash
+https://ooblets-api.herokuapp.com/charactersApi/<id>
+```
+
+URL Parameters
+
+| Parameter |  	Description |
+| ------------- | ------------- |
+| id | The id of the character to delete |
 
 ## Crops
 **GET all Crops** 
@@ -108,8 +133,6 @@ HTTP Request
 ```bash
 https://ooblets-api.herokuapp.com/cropsApi
 ```
-
-![Image](https://github.com/MTashreeqWaggie/Ooblets-Restful-API/blob/main/screenshots/AllCrops.PNG)
 
 **GET a Specific Crop** (JWT Token needed.)
 
@@ -124,9 +147,23 @@ URL Parameters
 
 | Parameter |  	Description |
 | ------------- | ------------- |
-| id | The id of the crop |
+| id | The id of the crop to delete |
 
-![Image](https://github.com/MTashreeqWaggie/Ooblets-Restful-API/blob/main/screenshots/specificCrop.PNG)
+
+**DELETE a Specific Crop** (JWT Token needed.)
+
+This endpoint deletes a specific crop.
+
+HTTP Request
+```bash
+https://ooblets-api.herokuapp.com/cropsApi/<id>
+```
+
+URL Parameters
+
+| Parameter |  	Description |
+| ------------- | ------------- |
+| id | The id of the crop to delete |
 
 ## Tools
 
@@ -138,8 +175,6 @@ HTTP Request
 ```bash
 https://ooblets-api.herokuapp.com/toolsApi
 ```
-
-![Image](https://github.com/MTashreeqWaggie/Ooblets-Restful-API/blob/main/screenshots/AllTools.PNG)
 
 **GET a Specific Tool** (JWT Token needed.)
 
@@ -154,11 +189,23 @@ URL Parameters
 
 | Parameter |  	Description |
 | ------------- | ------------- |
-| id | The id of the tool|
+| id | The id of the tool to delete |
 
 
-![Image](https://github.com/MTashreeqWaggie/Ooblets-Restful-API/blob/main/screenshots/specificTools.PNG)
+**DELETE a Specific Tool** (JWT Token needed.)
 
+This endpoint deletes a specific tool.
+
+HTTP Request
+```bash
+https://ooblets-api.herokuapp.com/toolsApi/<id>
+```
+
+URL Parameters
+
+| Parameter |  	Description |
+| ------------- | ------------- |
+| id | The id of the tool to delete |
 
 ## Errors
 

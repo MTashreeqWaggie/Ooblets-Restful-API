@@ -1,19 +1,5 @@
 {% extends "base.html" %}
 
-{% block nav %} 
-    <nav>
-        <!--logo--------------->
-        <a href="#" class="logo">
-            <img src="{{ url_for('static', filename='images/ooblets-logo.png') }}"/>
-        </a>
-        <!--menu--btn----------------->
-        <ul class="menu">
-            <li><a href="{{url_for('showOoblets')}}">Home</a></li>
-            <li><a href="{{url_for('aboutOoblets')}}">About</a></li>
-            <li><a href="{{url_for('docsOoblets')}}">Docs</a></li>
-        </ul>
-    </nav> 
-{% endblock %}
 
 {% block screenshots %}
     <section id="main">
@@ -26,35 +12,35 @@
             <li class="item-a">
                 <!--showcase-box------------------->
                 <div class="showcase-box">
-                    <img src="{{ url_for('static', filename='images/ooblets_screenshot_farm.jpg') }}"/>
+                    <img src="{{ url_for('static', filename='images/gameplay.gif') }}"/>
                 </div>
             </li>
                 <!--box-2--------------------------->
             <li class="item-b">
                 <!--showcase-box------------------->
                 <div class="showcase-box">
-                    <img src="{{ url_for('static', filename='images/adjusted-purple-night-dance.jpg') }}"/>
+                    <img src="{{ url_for('static', filename='images/all-my-babies.gif') }}"/>
                 </div>
             </li>
                 <!--box-3--------------------------->
             <li class="item-c">
                 <!--showcase-box------------------->
                 <div class="showcase-box">
-                    <img src="{{ url_for('static', filename='images/petula-dance.jpg') }}"/>
+                    <img src="{{ url_for('static', filename='images/battleui.gif') }}"/>
                 </div>
             </li>
                 <!--box-4--------------------------->
             <li class="item-d">
                 <!--showcase-box------------------->
                 <div class="showcase-box">
-                    <img src="{{ url_for('static', filename='images/blue-crop.jpg') }}"/>
+                    <img src="{{ url_for('static', filename='images/planties.gif') }}"/>
                 </div>
             </li>
                 <!--box-5--------------------------->
             <li class="item-e">
                 <!--showcase-box------------------->
                 <div class="showcase-box">
-                    <img src="{{ url_for('static', filename='images/hair-salon-interior.jpg') }}"/>
+                    <img src="{{ url_for('static', filename='images/sales-ui.gif') }}"/>
                 </div>
             </li>
         </ul>
@@ -62,112 +48,104 @@
     </section>
 {% endblock %}
 
+{% block content %}
+    <section id="content">
+        <div class="container">
+            <div class="row">
 
-{% block monsters %}
-    <section id="information">
-        <h2 class="information-heading">OOBLETS</h2>
-        <!--slider------------------->
-        
-        <ul id="autoWidth2" class="cs-hidden">
-            <!--slide-box-1------------------>
-            {% for ooblet in ooblets %}
-            <li class="item-a">
-                <div class="information-box">
-                    <!--img-------->
-                    <div class="information-b-img">
-                        <img src="{{ooblet.ooblet_image_link}}">
-                    </div>
-                    <!--text---------->
-                    <div class="information-b-text">
-                        <strong>{{ooblet.ooblet_name}} </strong>
-                    </div>
-                </div>
-            </li>
-            {% endfor %}
-        </ul>
-    </section>
-{% endblock %}
-
-{% block characters %}
-    <section id="information-characters">
-        <h2 class="information-characters-heading">CHARACTERS</h2>
-        <!--slider------------------->
-        
-        <ul id="autoWidth2" class="cs-hidden">
-            <!--slide-box-1------------------>
-            {% for character in characters %}
-            <li class="item-a">
-                <div class="information-characters-box">
-                    <!--img-------->
-                    <div class="information-characters-b-img">
-                        <img src="{{character.character_image_link}}">
-                    </div>
-                    <!--text---------->
-                    <div class="information-characters-b-text">
-                        <strong>{{character.character_name}} </strong>
+                <div class="col-lg-6 mb-4">
+                    <div class="card">
+                        <div class="card-horizontal">
+                            <div class="img-square-wrapper">
+                                <img class="" width="200" height="200" src="{{ url_for('static', filename='images/Mayor_Tinstle.png') }}" alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Mayor Tinstle</h4>
+                                <p class="card-text">Occupation: Mayor of Badgetown.</p>
+                                <p class="card-text">She is the Mayor of Badgetown, and enlists the player to help fix up the town in exchange for an old farmhouse.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </li>
-            {% endfor %}
-        </ul>
-    </section>
-{% endblock %}
 
-{% block crops %}
-    <section id="information">
-        <h2 class="information-heading">CROPS</h2>
-        <!--slider------------------->
-        
-        <ul id="autoWidth2" class="cs-hidden">
-            <!--slide-box-1------------------>
-            {% for crop in crops %}
-            <li class="item-a">
-                <div class="information-box">
-                    <!--img-------->
-                    <div class="information-b-img">
-                        <img src="{{crop.crop_image_link}}">
-                    </div>
-                    <!--text---------->
-                    <div class="information-b-text">
-                        <strong>{{crop.crop_name}} </strong>
+                <div class="col-lg-6 mb-4">
+                    <div class="card">
+                        <div class="card-horizontal">
+                            <div class="img-square-wrapper">
+                                <img class="" width="200" height="200" src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/ooblets/1/1c/Clickyclaws.png?width=814" alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Clickyclaws</h4>
+                                <p class="card-text">Clickyclaws are known to congregate in unused structures and may act aggressively to interlopers.</p>
+                                <p class="card-text">LDance Requirements: 2x Floobtose.</p>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </li>
-            {% endfor %}
-        </ul>
-    </section>
-{% endblock %}
 
-{% block tools %}
-    <section id="information">
-        <h2 class="information-heading">TOOLS</h2>
-        <!--slider------------------->
-        
-        <ul id="autoWidth2" class="cs-hidden">
-            <!--slide-box-1------------------>
-            {% for tool in tools %}
-            <li class="item-a">
-                <div class="information-box">
-                    <!--img-------->
-                    <div class="information-b-img">
-                        <img src="{{tool.tool_image_link}}">
-                    </div>
-                    <!--text---------->
-                    <div class="information-b-text">
-                        <strong>{{tool.tool_name}} </strong>
+                <div class="col-lg-6 mb-4">
+                    <div class="card">
+                        <div class="card-horizontal">
+                            <div class="img-square-wrapper">
+                                <img class="" width="200" height="200" src="{{ url_for('static', filename='images/Blue_Goo_Pie.png') }}" alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Blue Goo Pie</h4>
+                                <p class="card-text">Energy: 90</p>
+                                <p class="card-text">Ingredients: 1x Froobtose, 3x Zinooka, 1x Muz Flour.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </li>
-            {% endfor %}
-        </ul>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="card">
+                        <div class="card-horizontal">
+                            <div class="img-square-wrapper">
+                                <img class="" width="200" height="200" src="{{ url_for('static', filename='images/Rugnolia.png') }}" alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Rugnolia</h4>
+                                <p class="card-text">Occupation: Scientist.</p>
+                                <p class="card-text">She is an inventor and gives the player their Grumboire. She also enlists the player to gather items for her inventions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="card">
+                        <div class="card-horizontal">
+                            <div class="img-square-wrapper">
+                                <img class="" width="200" height="200" src="{{ url_for('static', filename='images/Muz.png') }}" alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Muz</h4>
+                                <p class="card-text">A really big starchy grain that can be turned into Muz Flour.</p>
+                                <p class="card-text">Energy : 6</p>
+                                <p class="card-text">Growth Time: 2 days.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="card">
+                        <div class="card-horizontal">
+                            <div class="img-square-wrapper">
+                                <img class="" width="200" height="200" src="{{ url_for('static', filename='images/BlueBackpack.png') }}" alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Basic Backpack</h4>
+                                <p class="card-text">Price: 500 Gummies</p>
+                                <p class="card-text">Inventory Size: +10</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </section>
 {% endblock %}
-
-{% block foods %}
-{% endblock %}
-
-
-{% block content %}   
-{% endblock %}
-
-
