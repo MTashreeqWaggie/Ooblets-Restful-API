@@ -164,3 +164,56 @@ https://ooblets-api.herokuapp.com
         
        ]
 
+## Get all Characters
+
+### Request
+
+`GET /charactersApi`
+
+     https://ooblets-api.herokuapp.com/charactersApi
+     
+
+### Response
+
+    HTTP/1.1 200 OK
+    Status: 200 OK
+    Content-Type: JSON
+    
+        "characters": [
+        {
+            "character_image": "/static/images/Arah.png",
+            "character_location": "Badgetown",
+            "character_name": "Arah",
+            "gender": "Female",
+            "id": 1,
+            "occupation": "Operates the Printypress. ",
+            "personality": "Arah is a spunky sort of person who marches to the tune of her own drum. She has a very modern dialect, and is generally kind to everyone that she meets. She is particularly fixated on a more dark academia way of life, enjoying activities such as creating potions and spells alongside summoning the occult. "
+        }
+
+## Get Characters by ID
+
+### Request
+
+`GET /charactersApi/<int:id>`
+`GET /charactersApi/3`
+
+     https://ooblets-api.herokuapp.com/charactersApi/3
+     
+
+### Response
+
+    HTTP/1.1 200 OK
+    Status: 200 OK
+    Content-Type: JSON
+    
+        "characters": {
+             "character_image": "/static/images/Churles.png",
+             "character_location": "Badgetown",
+             "character_name": "Churles",
+             "gender": "Male",
+             "id": 3,
+             "occupation": "Runs Kibbonbon . ",
+             "personality": "Initially, Churles presents himself as a hypochondriac and germaphobe - he doesn't appreciate it when his personal space is encroached upon, and he makes it abundantly clear that he doesn't like to shake peoples hands. Because of this, he lives a rather isolated lifestyle. "
+         }
+    
+    
