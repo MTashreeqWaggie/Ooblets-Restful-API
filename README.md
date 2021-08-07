@@ -12,7 +12,7 @@ https://ooblets-api.herokuapp.com
 
 ### Request
 
-`POST /register/`
+`POST /register`
 
      https://ooblets-api.herokuapp.com/register
 
@@ -31,4 +31,27 @@ https://ooblets-api.herokuapp.com
 
     {
       "message": "User created successfully."
+    }
+
+## Authentication
+
+### Request
+
+`POST /auth`
+
+     https://ooblets-api.herokuapp.com/auth
+
+     Headers: 
+     Key: Content-Type
+     Value: application/json
+     
+
+### Response
+
+    HTTP/1.1 200 OK
+    Status: 200 OK
+    Content-Type: application/json
+
+    {
+              "access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjgzNTk1NTksImlhdCI6MTYyODM1OTI1OSwibmJmIjoxNjI4MzU5MjU5LCJpZGVudGl0eSI6MX0.rqKtub_R_WFOtUpcA1X3NxGur_jxckaMpOO3DhPAhJM"
     }
