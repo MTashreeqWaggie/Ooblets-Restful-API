@@ -4,6 +4,16 @@
 ## Introduction
 This is a SIMPLE RESTful API created based on the game name Ooblets. Why? I was curious on how api's work and tried creating one of my own based on game I enjoy playing.
 
+## Tools
+This documentation is based on the use of [POSTMAN](https://www.postman.com/) for checking endpoints and queries.
+
+##Upcoming Updates
+- Data for housing will be added
+- Fix erros in data
+- New type of queries will be added
+- Improve code structure/maintainability.
+- A Website
+
 ## Base URL
 ```bash
 https://ooblets-api.herokuapp.com
