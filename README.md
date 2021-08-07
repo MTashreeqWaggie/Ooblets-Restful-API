@@ -14,7 +14,7 @@ This documentation is based on the use of [POSTMAN](https://www.postman.com/) fo
 - Improve code structure/maintainability.
 - A Website
 
-## Copyrights?
+## Copyright?
 Ooblets is created by Glumberland. The data and images are used without claim of ownership and belong to their respective owners.
 
 ## Base URL
