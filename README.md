@@ -7,12 +7,15 @@ This is a SIMPLE RESTful API created based on the game name Ooblets. Why? I was 
 ## Tools
 This documentation is based on the use of [POSTMAN](https://www.postman.com/) for checking endpoints and queries.
 
-##Upcoming Updates
+## Upcoming Updates
 - Data for housing will be added
 - Fix erros in data
 - New type of queries will be added
 - Improve code structure/maintainability.
 - A Website
+
+## Copyrights?
+Ooblets is created by Glumberland. The data and images are used without claim of ownership and belong to their respective owners.
 
 ## Base URL
 ```bash
