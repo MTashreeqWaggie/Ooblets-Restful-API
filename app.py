@@ -33,6 +33,11 @@ DBSession = sessionmaker(bind=engine)
 session = DBSession()
 
 
+@app.route('/')
+@app.route('/ooblets')
+def showOoblets():
+    return render_template("ooblets.html")
+
 #-----------------------------------------------------------------------
 
 """Endpoints for Ooblets"""
