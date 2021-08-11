@@ -139,15 +139,14 @@ https://ooblets-api.herokuapp.com
              "signature_move_lvl_3_name": "Stompulent "
          }
 
-## Get Ooblet by LOCATION
+## Get Ooblet by NAME
 
 ### Request
 
-`GET /oobletsApi/<string:location>`
-`GET /oobletsApi/Mamoonia`
-`GET /oobletsApi/Badgetown`
+`GET /oobletsApi/<string:ooblet_name>`
+`GET /oobletsApi/Tud`
 
-     https://ooblets-api.herokuapp.com/oobletsApi/Mamoonia
+     https://ooblets-api.herokuapp.com/oobletsApi/Tud
      
 
 ### Response
@@ -156,26 +155,25 @@ https://ooblets-api.herokuapp.com
     Status: 200 OK
     Content-Type: JSON
     
-        "ooblets": [
-        {
-            "battle_requirements": "1x Quib ",
-            "description": "Bristlebuds resemble cute little cacti wearing shorts. Despite their prickly exterior, these ooblets make a solid companion with their solid debuffs. ",
-            "id": 7,
-            "location": "Mamoonia",
-            "name": "Bristlebud",
-            "ooblet_image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/ooblets/5/5b/Bristlebud.png?width=640",
-            "signature_move_lvl_1_beat_requirement": 2,
-            "signature_move_lvl_1_effect": "Stun target for 2 turns.",
-            "signature_move_lvl_1_name": "Prickle Prance",
-            "signature_move_lvl_2_beat_requirement": 2,
-            "signature_move_lvl_2_effect": "Add three fluster to enemies.",
-            "signature_move_lvl_2_name": "Spiny Spin",
-            "signature_move_lvl_3_beat_requirement": 4,
-            "signature_move_lvl_3_effect": "Increase cost of enemy moves by 2 beats during their next turn .",
-            "signature_move_lvl_3_name": "Stompulent "
-        }, ...
+    "ooblets": {
+             "battle_requirements": "1x Frunbuns Hunbun",
+             "id": 2,
+             "ooblet_description": "Tuds are the semi-aquatic mascot ooblets of the Frunbuns club. They are good at being supportive members of a dance troupe. Wild tuds can only be lured into dances with exclusive Frunbuns treabies.",
+             "ooblet_image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/ooblets/b/be/Tud.png?width=640",
+             "ooblet_location": "Club Selection",
+             "ooblet_name": "Tud",
+             "signature_move_lvl_1_beat_requirement": 1,
+             "signature_move_lvl_1_effect": "Gain one hype.",
+             "signature_move_lvl_1_name": "Glaze Glide",
+             "signature_move_lvl_2_beat_requirement": 0,
+             "signature_move_lvl_2_effect": "Gain 1 point each time a move is played during this hand.",
+             "signature_move_lvl_2_name": "Tadpolka",
+             "signature_move_lvl_3_beat_requirement": 3,
+             "signature_move_lvl_3_effect": "Gain 4 hype.",
+             "signature_move_lvl_3_name": "Hype Tram Jam"
+     }
         
-       ]
+       
 
 ## Get all Characters
 
