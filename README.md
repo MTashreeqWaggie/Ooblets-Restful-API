@@ -8,7 +8,7 @@ This is a SIMPLE RESTful API created based on the game name Ooblets. Why? I was 
 This documentation is based on the use of [POSTMAN](https://www.postman.com/) for checking endpoints and queries.
 
 ## Upcoming Updates
-- Data for housing will be added
+- Data for housing and food recipes will be added
 - Fix erros in data
 - New type of queries will be added
 - Improve code structure/maintainability.
@@ -226,7 +226,34 @@ https://ooblets-api.herokuapp.com
              "occupation": "Runs Kibbonbon . ",
              "personality": "Initially, Churles presents himself as a hypochondriac and germaphobe - he doesn't appreciate it when his personal space is encroached upon, and he makes it abundantly clear that he doesn't like to shake peoples hands. Because of this, he lives a rather isolated lifestyle. "
          }
-    
+
+## Get Characters by NAME
+
+### Request
+
+`GET /charactersApi/<int:character_name>`
+`GET /charactersApi/Arah`
+
+     https://ooblets-api.herokuapp.com/charactersApi/Arah
+     
+
+### Response
+
+    HTTP/1.1 200 OK
+    Status: 200 OK
+    Content-Type: JSON
+
+    "characters": {
+        "character_gender": "Female",
+        "character_image": "/static/images/Arah.png",
+        "character_location": "Badgetown",
+        "character_name": "Arah",
+        "character_personality": "Arah is a spunky sort of person who marches to the tune of her own drum. She has a very modern dialect, and is generally kind to everyone that she meets. She is particularly fixated on a more dark academia way of life, enjoying activities such as creating potions and spells alongside summoning the occult. ",
+        "id": 1,
+        "occupation": "Operates the Printypress."
+    }
+
+
 ## Get all Clothing
 
 ### Request
@@ -271,7 +298,7 @@ https://ooblets-api.herokuapp.com
     Content-Type: JSON
     
         "clothing": {
-             "category": "Shirts",
+             "clothing_category": "Shirts",
              "clothing_image": "/static/images/Boombox_Sweater.png",
              "clothing_location": "Kibbonbon",
              "clothing_name": "Boombox Sweater",
@@ -279,7 +306,35 @@ https://ooblets-api.herokuapp.com
              "id": 5,
              "kibbonbon_lvl": 1
           }
-          
+ 
+## Get Clothing by CATEGORY
+
+### Request
+
+`GET /clothingApi/<int:clothing_category>`
+`GET /clothingApi/Backpacks`
+
+     https://ooblets-api.herokuapp.com/clothingApi/Backpacks
+   
+
+### Response
+
+    HTTP/1.1 200 OK
+    Status: 200 OK
+    Content-Type: JSON
+    
+        "clothing": [
+             {
+                 "clothing_category": "Backpacks",
+                 "clothing_image": "/static/images/Basic_Bum_Bag.png",
+                 "clothing_location": "Kibbonbon",
+                 "clothing_name": "Basic Bum Bag",
+                 "clothing_price": 250,
+                 "id": 10,
+                 "kibbonbon_lvl": 1
+             }, ...
+         ]
+ 
 ## Get all Badges
 
 ### Request
@@ -305,6 +360,7 @@ https://ooblets-api.herokuapp.com
              }, ...
          ]
 
+
 ## Get Badges by ID
 
 ### Request
@@ -328,7 +384,34 @@ https://ooblets-api.herokuapp.com
              "badge_task_description": "Scan 10 Ooblets at the Lernery.",
              "id": 4
          }
-         
+ 
+
+## Get Badges by CATEGORY
+
+### Request
+
+`GET /badgesApi/<int:badge_category>`
+`GET /badgesApi/FARMING`
+
+     https://ooblets-api.herokuapp.com/badgesApi/FARMING
+     
+
+### Response
+
+    HTTP/1.1 200 OK
+    Status: 200 OK
+    Content-Type: JSON
+    
+        "badges": [
+             {
+                 "badge_category": "Farming",
+                 "badge_image": "/static/images/Farming_Badge_1.png",
+                 "badge_reward": "80 Wishies",
+                 "badge_task_description": "Plant 15 seeds.",
+                 "id": 10
+             }, ...
+        ]
+ 
 ## Get all Tools
 
 ### Request
@@ -434,62 +517,4 @@ https://ooblets-api.herokuapp.com
              "id": 4
          }
       
-## Get all Foods
-
-### Request
-
-`GET /foodsApi`
-
-     https://ooblets-api.herokuapp.com/foodsApi
-     
-
-### Response
-
-    HTTP/1.1 200 OK
-    Status: 200 OK
-    Content-Type: JSON
-    
-        "foods": [
-             {
-                 "food_Ingredient_1": "1x sweetiebeetie",
-                 "food_Ingredient_2": "1x sporbet",
-                 "food_Ingredient_3": "1x shelbo. ",
-                 "food_Ingredient_4": "",
-                 "food_Ingredient_5": "",
-                 "food_energy": 30,
-                 "food_image": "/static/images/Clambrosia.png",
-                 "food_name": "Clambrosia",
-                 "food_value": 20,
-                 "id": 1
-             }, ...
-        ]
- 
-## Get Foods by ID
-
-### Request
-
-`GET /foodsApi/<int:id>`
-`GET /foodsApi/9`
-
-     https://ooblets-api.herokuapp.com/foodsApi/9
-     
-
-### Response
-
-    HTTP/1.1 200 OK
-    Status: 200 OK
-    Content-Type: JSON
-    
-        "foods": {
-             "food_Ingredient_1": "3x Zinooka",
-             "food_Ingredient_2": "3x Muz Flour. ",
-             "food_Ingredient_3": "3x Flooti sauce",
-             "food_Ingredient_4": "3x Quib",
-             "food_Ingredient_5": "3x Froobtose",
-             "food_energy": 150,
-             "food_image": "/static/images/Zinooka_Cake.png",
-             "food_name": "Zinooka Cake",
-             "food_value": 200,
-             "id": 9
-         }
         
